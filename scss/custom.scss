@@ -1,0 +1,104 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700;500;0,500;1;&display=swap');
+
+// Required
+@import "../bootstrap/scss/functions";
+
+
+// Default variable overrides
+$green:#39B077;
+$blue: #457B9D;
+$cyan:#A8DADC;
+$red:#E63946;
+$light-cyan: #F1FAEE;
+$navy: #1D3557;
+
+
+$light: $light-cyan;
+$dark: $navy;
+
+//custom theme
+$body-bg:$light-cyan;
+$body-color:$navy;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$headings-font-family:'Roboto', sans-serif;
+$input-font-family: 'Roboto', sans-serif;
+$font-family-base: $input-font-family;
+$progress-border-radius: 0;
+$progress-height: 2rem;
+$progress-bg: #DEEBDA;
+$headings-font-weight: 700;
+$font-size-base: .9rem;
+$line-height-base: 1.4;
+
+
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+.progress{
+    border:2px solid white;
+}
+
+.subnav{
+    border-bottom: 1px solid $navy;
+}
+
+.team-holder{
+    .team-member{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom:$spacer;
+        border-bottom: 1px solid #DFEFD9;
+    }
+    .team-member_photo{
+        object-fit: contain;
+        width:120px;
+        height:120px;
+    }
+}
+
+.col-sprint{
+    display: block;
+    background-color: #E9F4E5;
+    border-radius: 12px;
+    border:2px solid #F5FFF2;
+    padding:$spacer;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
+
+a.sprint-pill{
+    display: flex;
+    align-items: center;
+    background-color: $navy;
+    color:white;
+    border-radius: 100px;
+    padding:$spacer $spacer*2;
+    border:2px solid $navy;
+    box-shadow:
+    0 3px 5.3px rgba(0, 0, 0, 0.028),
+    0 10.1px 17.9px rgba(0, 0, 0, 0.042),
+    0 45px 80px rgba(0, 0, 0, 0.07)
+  ;
+text-decoration: none;
+margin-bottom:$spacer;
+transition: all .15s ease-out;
+&:hover{
+    opacity: .95;
+    border:2px solid $success;
+    box-shadow: none;
+}
+&:active{
+    transform: scale(.96);
+}
+
+}
