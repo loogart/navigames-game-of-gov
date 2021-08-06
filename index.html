@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark" style="background-color: #1D3557;">
+    <nav class="navbar navbar-dark sticky-md-top shadow" style="background-color: #1D3557;">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center"><img src="./img/logomark.svg" alt="" style="width:50px"
                     class="me-2"> Game of Gov</a>
@@ -24,9 +24,9 @@
             </form>
         </div>
     </nav>
-    <div class="container-fluid">
-        <!-- subnavigation bar-->
-        <section class="subnav py-3">
+    <!-- subnavigation bar-->
+    <section class="subnav py-3">
+        <div class="container-fluid">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-5">
                     <div class="row align-items-center justify-content-between">
@@ -68,10 +68,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
-        <!-- Trello board-->
-        <section class="agile-grid py-3 ">
+    <!-- Trello board-->
+    <section class="agile-grid py-3">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
                     <h4>Your awesome team</h4>
@@ -115,20 +117,34 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="team-member">
+                            <img class="team-member_photo" src="./img/human_white_027.png" alt="">
+                            <div class="team-member_detail">
+                                <h4>Jayson Gee</h4>
+                                <span class="rate fw-bold">$2,000/day</span> <span class="status">✅ Active</span>
+                                <ul>
+                                    <li>Dev: 200</li>
+                                    <li>Management: 80</li>
+                                    <li>Motivation: 69</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="row">
+                        <!-- Sprint column 1 -->
                         <div class="col-md-6 col-lg-4">
                             <div class="col-sprint">
-                                <h3 class="pb-3 border-bottom mb-3"><i class="fa-solid fa-thumbtack text-danger me-2"></i>Backlog</h3>
-                                <a href="#!" class="sprint-pill">
+                                <h3 class="pb-3 border-bottom mb-3"><i
+                                        class="fa-solid fa-thumbtack text-danger me-2"></i>Backlog</h3>
+                                <a href="#!" class="sprint-pill bg-primary">
                                     <div class="me-3">
-                                        <i class="fa-solid fa-rectangle-code text-light fa-3x"></i>
+                                        <i class="fa-solid fa-bug text-light fa-3x"></i>
                                     </div>
                                     <div>
-                                        <span class="d-block fw-bold mb-1">6 Front-end design</span>
-                                        <span class="badge rounded-pill bg-danger">10</span>
+                                        <span class="d-block fw-bold mb-1">4 Calculations</span>
+                                        <span class="badge rounded-pill bg-danger">5</span>
                                         <span class="badge rounded-pill text-dark bg-info">10</span>
                                     </div>
                                 </a>
@@ -147,9 +163,63 @@
                                         <i class="fa-solid fa-rectangle-code text-light fa-3x"></i>
                                     </div>
                                     <div>
-                                        <span class="d-block fw-bold mb-1">6 Front-end design</span>
+                                        <span class="d-block fw-bold mb-1">7 PHP Functions</span>
+                                        <span class="badge rounded-pill bg-danger">40</span>
+                                        <span class="badge rounded-pill text-dark bg-info">15</span>
+                                    </div>
+                                </a>
+                                <a href="#!" class="sprint-pill">
+                                    <div class="me-3">
+                                        <i class="fa-solid fa-rectangle-code text-light fa-3x"></i>
+                                    </div>
+                                    <div>
+                                        <span class="d-block fw-bold mb-1">8 Angular Components</span>
+                                        <span class="badge rounded-pill bg-danger">60</span>
+                                        <span class="badge rounded-pill text-dark bg-info">35</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Sprint column 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="col-sprint">
+                                <h3 class="pb-3 border-bottom mb-3"><i
+                                        class="fa-solid fa-cog text-primary me-2"></i>Current sprint</h3>
+                                <a href="#!" class="sprint-pill">
+                                    <div class="me-3">
+                                        <i class="fa-solid fa-database text-light fa-3x"></i>
+                                    </div>
+                                    <div>
+                                        <span class="d-block fw-bold mb-1">1 Database setup</span>
                                         <span class="badge rounded-pill bg-danger">10</span>
-                                        <span class="badge rounded-pill text-dark bg-info">10</span>
+                                        <span class="badge rounded-pill text-dark bg-info">15</span>
+                                    </div>
+                                </a>
+                                <a href="#!" class="sprint-pill">
+                                    <div class="me-3">
+                                        <i class="fa-solid fa-clipboard text-info fa-3x"></i>
+                                    </div>
+                                    <div>
+                                        <span class="d-block fw-bold mb-1">3 Dev scope</span>
+                                        <span class="badge rounded-pill bg-danger">90</span>
+                                        <span class="badge rounded-pill text-dark bg-info">25</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Sprint column 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="col-sprint">
+                                <h3 class="pb-3 border-bottom mb-3"><i
+                                        class="fa-solid fa-check-circle text-success me-2"></i>Production</h3>
+                                <a href="#!" class="sprint-pill border-success">
+                                    <div class="me-3">
+                                        <i class="fa-solid fa-calendar text-info fa-3x"></i>
+                                    </div>
+                                    <div>
+                                        <span class="d-block fw-bold mb-1">2 Project schedule</span>
+                                        <span class="badge rounded-pill bg-danger">10</span>
+                                        <span class="badge rounded-pill text-dark bg-info">15</span>
                                     </div>
                                 </a>
                             </div>
@@ -157,8 +227,138 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <div class="wrapper-advice-human" id="adviceMan" onclick="myFunction()">
+        <div class="blue-bubble">
+            <span class="d-block">Don’t let job requirements put you in a box. Think outside of the box. Think
+                hard!!!</span>
+        </div>
+        <img src="./img/human_white0905.png" alt="" class="advice-human">
+    </div>
+
+    <!-- Bottom action bar -->
+    <section class="bottom-actions fixed-bottom bg-light py-3 shadow">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-7">
+                    <a class="btn btn-lg btn-primary me-2" href="#" role="button"><i
+                            class="fa-solid fa-diagram-project me-2"></i>Level up</a>
+                    <a class="btn btn-lg btn-danger text-white me-2" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modalAddPro"><i class="fa-solid fa-user-tie me-2"></i>Add a pro</a>
+                    <a class="btn btn-lg btn-outline-dark" href="#" role="button"><i
+                            class="fa-solid fa-edit me-2"></i>Edit team</a>
+                </div>
+                <div class="col-lg-3 d-grid">
+                    <a class="btn btn-lg btn-success text-white" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modalComplete"><i class="fa-solid fa-play-circle me-2"></i>Complete your
+                        turn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal Add pro-->
+    <div class="modal fade" id="modalAddPro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Pick a pro</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="team-member">
+                                    <img class="img-add-pro mb-3" src="./img/human_white_024.png" alt="">
+                                    <div class="team-member_detail">
+                                        <h4>Ginette R.</h4>
+                                        <span class="rate fw-bold d-block mb-1">$1,060/day</span> <span
+                                            class="d-block mb-2">✅ Active</span>
+                                        <ul>
+                                            <li>Dev: 30</li>
+                                            <li>Design: 60</li>
+                                            <li>Motivation: 30</li>
+                                        </ul>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">+ Add to
+                                            team</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="team-member">
+                                    <img class="img-add-pro mb-3" src="./img/human_white_050.png" alt="">
+                                    <div class="team-member_detail">
+                                        <h4>Liann Lee</h4>
+                                        <span class="rate fw-bold d-block mb-1">$1,200/day</span> <span
+                                            class="d-block mb-2">⚙️ On training</span>
+                                        <ul>
+                                            <li>Dev: 30</li>
+                                            <li>Design: 60</li>
+                                            <li>Motivation: 30</li>
+                                        </ul>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">+ Add to
+                                            team</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="team-member">
+                                    <img class="img-add-pro mb-3" src="./img/human_white0551.png" alt="">
+                                    <div class="team-member_detail">
+                                        <h4>Hassan H.</h4>
+                                        <span class="rate fw-bold d-block mb-1">$2,500/day</span> <span
+                                            class="d-block mb-2">🏝 On vacation</span>
+                                        <ul>
+                                            <li>Dev: 3440</li>
+                                            <li>Design: 460</li>
+                                            <li>Motivation: 2000</li>
+                                        </ul>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">+ Add to
+                                            team</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="team-member">
+                                    <img class="img-add-pro mb-3" src="./img/human_white0844.png" alt="">
+                                    <div class="team-member_detail">
+                                        <h4>Cynthia Tee</h4>
+                                        <span class="rate fw-bold d-block mb-1">$500/day</span> <span
+                                            class="d-block mb-2">✅ Active</span>
+                                        <ul>
+                                            <li>Dev: 80</li>
+                                            <li>Design: 100</li>
+                                            <li>Motivation: 29</li>
+                                        </ul>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">+ Add to
+                                            team</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal Complete turn -->
+    <div class="modal fade" id="modalComplete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content bg-light">
+                <div class="modal-body py-4 text-center">
+                    <h3>Are you sure?</h3>
+                    You are about to complete your turn. This action cannot be undone.
+                    <div class="d-flex justify-content-center py-3">
+                        <button type="button" class="btn btn-outline-secondary me-3" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

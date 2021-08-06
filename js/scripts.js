@@ -1,3 +1,4 @@
+// Interaction.js draggable components
 const position = { x: 0, y: 0 }
 
 interact('.sprint-pill').draggable({
@@ -14,3 +15,16 @@ interact('.sprint-pill').draggable({
     },
   }
 })
+
+// Enable tooptips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+
+// hide advice human
+function myFunction() {
+  var element = document.getElementById("adviceMan");
+  element.classList.add("d-none");
+}
